@@ -1,0 +1,110 @@
+----- 1. Layout header, body y footer ----
+ <SafeAreaView style={{ flex: 1 }}>
+      <View style={{ height: 100, backgroundColor: 'coral' }}>
+        <Text>Hi, world</Text>
+      </View>
+      <View style={{ flex: 1, height: 100, backgroundColor: 'skyblue' }}>
+        <Text></Text>
+      </View>
+      <View style={{ height: 100, backgroundColor: 'khaki' }}>
+        <Text>Hi, world</Text>
+      </View>
+
+
+    </SafeAreaView>
+
+---- Header, body con formulario y footer ----
+
+    <SafeAreaView style={{flex:1}}>
+      <View style={{height:100,backgroundColor:'coral'}}>
+        <Text>Hi, world</Text>
+      </View>
+      <View style={{flex:1,height:100,backgroundColor:'skyblue'}}>
+        <Text></Text>
+        <View style={styles.container}>
+      <Text>Datos del Usuario</Text>
+     
+      <Text>Nombre</Text>
+      <TextInput
+        placeholder="Ingrese Nombre"
+        style={{ borderStyle: 'dashed', color: 'blue', fontSize: 18 }}
+       
+
+      />
+      <Text>{'\n'}</Text>
+      <Text>Teléfono</Text>
+      <TextInput
+        placeholder="Ingrese Teléfono"
+        style={{ borderStyle: 'solid', color: 'blue', fontSize: 18 }}
+       
+
+      />
+      <Text>{'\n'}</Text>
+      <Text>Salario</Text>
+      <TextInput
+        placeholder="Ingrese Salario"
+        style={{ borderStyle: 'dashed', color: 'blue', fontSize: 18 }}
+       
+      />
+      <View style={{flexDirection:'column'}}>
+      <Text>{'\n'}</Text>
+      <Button
+        title="Aceptar"
+        /*onPress={()=>alert(nombre+' '+ telefono + ' '+salario)}*/
+        /*onPress={()=>validar()}*/
+        
+      />
+      <Text>{'\n'}</Text>
+      <Button
+        title="Borrar"
+        /*onPress={()=>alert(nombre+' '+ telefono + ' '+salario)}*/
+        
+      />
+      <Text>{'\n'}</Text>
+      <Button
+        title="Retención en la fuente"
+        /*onPress={()=>alert(nombre+' '+ telefono + ' '+salario)}*/
+        
+      />
+      <TextInput
+        
+      />
+      </View>
+    </View>
+      </View>
+      <View style={{height:100,backgroundColor:'khaki'}}>
+        <Text>Hi, world</Text>
+      </View>
+    </SafeAreaView>
+
+----- espaciado entre los elementos ----
+
+<SafeAreaView style={{ flex: 1, alignItems:'center', justifyContent:'space-evenly'}}>
+      <View style={{ width:100,height: 100, backgroundColor: 'coral' }}>
+        <Text>Hi, world</Text>
+      </View>
+      <View style={{ width:100, height: 100, backgroundColor: 'skyblue' }}>
+        <Text>Hi, world</Text>
+      </View>
+      <View style={{ width:100,height: 100, backgroundColor: 'khaki' }}>
+        <Text>Hi, world</Text>
+      </View>
+    </SafeAreaView>
+
+----- Grid ----
+<SafeAreaView>
+      <View style={{alignItems:'center'}}>
+        <Text>Grid</Text>
+      </View>
+      <View style={{flexDirection:'row',flexWrap:'wrap'}}>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'coral'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'skyblue'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'khaki'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'pink'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'purple'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'powderblue'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'aqua'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'maroon'}}></View>
+        <View style={{width:100,height:100,margin:10,backgroundColor:'peru'}}></View>
+      </View>
+      </SafeAreaView>
